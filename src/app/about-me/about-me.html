@@ -1,0 +1,101 @@
+<!-- Bootstrap + FontAwesome CDN -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+<style>
+  .flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    padding: 0 50px;
+    gap: 150px; /* 👈 Big space between boxes */
+  }
+
+  .box {
+    padding: 40px;
+    border-radius: 20px;
+    min-height: 300px;
+    flex: 0 0 45%; /* each box takes around 45% */
+    max-width: 600px;
+  }
+
+  .about-box {
+    background-color: #f0f9ff;
+    border: 4px solid #b9f2ff;
+  }
+
+  .contact-box {
+    background-color: #fff9f0;
+    border: 4px solid #98fb98;
+  }
+
+  .box h3 {
+    font-size: 2.6rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+  }
+
+  .box p {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+  }
+
+  .icon-links {
+    margin-top: 20px;
+  }
+
+  .icon-links a {
+    font-size: 30px;
+    margin-right: 25px;
+    color: #333;
+  }
+
+  .icon-links a:hover {
+    color: #007bff;
+  }
+
+  @media (max-width: 992px) {
+    .flex-container {
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .box {
+      flex: 0 0 90%;
+    }
+  }
+</style>
+
+<div class="container-fluid" id="aboutme">
+  <div class="flex-container">
+
+    <!-- ✅ LEFT: ABOUT ME -->
+    <div class="box about-box" id="aboutme">
+      <h3>About Me</h3>
+      <p>
+        I'm <strong>Surya Nachiappan</strong>, a passionate full-stack developer from Madurai. I specialize in Java, Spring Boot, Angular, and Python. I enjoy building scalable web applications that solve real-world problems.
+      </p>
+    </div>
+
+    <!-- ✅ RIGHT: CONTACT INFO -->
+    <div class="box contact-box">
+      <h3>Contact Info</h3>
+      <p><i class="fas fa-location-dot"></i> Madurai</p>
+      <p><i class="fas fa-phone"></i> 6380575077</p>
+      <p><i class="fas fa-envelope"></i> suryanachiappan98&#64;gmail.com</p>
+
+      <div class="icon-links">
+        <a href="https://github.com/surya-NR" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/surya-nachiappan-986190258" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.naukri.com/mnjuser/profile?id=&altresid" target="_blank">
+            <i class="fas fa-briefcase"></i>
+          </a>
+      </div>
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,22 @@
+<div class="contact-glow-box" id="contact">
+    <h2 class="contact-heading">Contact Details</h2>
+  
+    <div class="form-row">
+      <input type="text" class="glow-input" placeholder="Your Name" [(ngModel)]="contact.name"  required/>
+      <input type="text" class="glow-input" placeholder="Company Name" [(ngModel)]="contact.company"  />
+    </div>
+  
+    <div class="form-row">
+      <input type="text" class="glow-input" placeholder="Mobile Number" [(ngModel)]="contact.mobile"  required/>
+      <input type="email" class="glow-input" placeholder="Email ID" [(ngModel)]="contact.email"  required/>
+    </div>
+  
+    <div class="form-row">
+      <textarea class="glow-textarea" placeholder="Details..." [(ngModel)]="contact.details" ></textarea>
+    </div>
+  
+    <div class="text-center">
+      <button class="send-btn" (click)="sendData()">Send</button>
+    </div>
+  </div>
+  
